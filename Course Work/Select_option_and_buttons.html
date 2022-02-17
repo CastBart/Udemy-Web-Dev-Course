@@ -1,0 +1,80 @@
+<html>
+
+    <head>
+        <Title>Pizza Order</Title>
+    </head>
+
+
+    <body>
+        <header>
+            <h1>This is my journey about moving to Italy!</h1>
+            A short story about why I moved here, with who and what's it like so far.
+        </header>
+        <br />
+        <br />
+        <br />
+
+
+
+        <main>
+            
+
+            <section id="contact-form">
+                <h2>Place order</h2>
+                
+                <form method="post" action="place-order.php">
+                    <h4>Delivery</h4>
+                    <input name="deliveryMethod" type="radio" value="delivery" /> Delivery<br />
+                    <input name="deliveryMethod" type="radio" value="pickup"/> Pick Up<br />
+
+
+                    <h4>Address</h4>
+                    <input name="address 1" placeholder="Address Line 1" class="lg-input" /> <br />
+                    <input name="address 2" placeholder="Address Line 2" class="lg-input" /> <br />
+
+                    <input name="city" placeholder="City" class="sm-inpnut" /> 
+                    <input name="county" placeholder="County" class="sm-inpnut" /> <br />
+                    <input name="zip" placeholder="Zip Code" class="sm-input" />
+                    <br />
+                    <br />
+
+                    <h4>Size</h4>
+                    <select name="size">
+                        <option value="12">12" - $12</option>
+                        <option value="16">16" - $15</option>
+                        <option value="18">18" - $18</option>
+                        <option value="24">24" - $21</option>
+                    </select>
+
+
+                    <h4>Ingredients</h4>
+                    <input name="ingredient" type="checkbox" value="pepperoni" /> Pepperoni <br />
+                    <input name="ingredient" type="checkbox" value="salami"/> Salami <br />
+                    <input name="ingredient" type="checkbox" value="bacon"/> Bacon <br />
+                    <input name="ingredient" type="checkbox" value="sausage"/> Sausage <br />
+                    <input name="ingredient" type="checkbox" value="onion"/> Onion <br />
+                    <input name="ingredient" type="checkbox" value="yellow peppers"/> Yellow Peppers <br />
+                    <br />
+                    <button type="submit"> Place Order</button>
+
+                </form>
+            </section>
+
+            <br />
+            <br />
+            <br />
+
+
+
+            <footer>&copy; All copyrights reserved by Bartek!</footer>
+
+        </main>
+
+
+
+    </body>
+
+
+
+
+</html>
