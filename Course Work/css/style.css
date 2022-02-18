@@ -1,0 +1,15 @@
+body {
+    background: rgba(255, 100, 50, .5);
+    color: rgba(0, 100, 255, .5);
+}
+
+h3{
+    color: black;
+}
+li{
+    color: #141f5e;
+}
+
+body li {
+    color: aqua;
+}
