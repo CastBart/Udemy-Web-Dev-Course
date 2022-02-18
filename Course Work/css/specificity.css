@@ -3,6 +3,10 @@ body {
     color: rgba(0, 100, 255, .5);
 }
 
+body > header > ul > h3 {
+    background: white;
+}
+
 h3{
     color: black;
 }
