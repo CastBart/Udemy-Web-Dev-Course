@@ -1,0 +1,22 @@
+
+body {
+    background: #7abdfc;
+    color: rgb(28, 48, 41);
+}
+
+h3 {
+    color: #ffffff;
+}
+
+body h3 {
+    background: #88c22a;
+    color: antiquewhite;
+    margin: 10px;
+    margin-top: 20px;
+    padding: 50px;
+}
+
+h1 {
+    float: left;
+}
+
