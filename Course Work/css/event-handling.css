@@ -15,12 +15,6 @@ body h1 {
     z-index: 4;
     position: absolute;
 }
-.my-input, .my-textarea{
-    border: 1px solid black;
-    width: 90%;
-    border-radius: 10px;
-    padding: 10px;
-}
 #site-title {
     font-family: "Redressed", sans-serif;
 }
@@ -35,9 +29,18 @@ body h1 {
     height: 80px;
 }
  #top-stories{
-     margin-left: 30px;
+     margin: 0 30px;
      max-width: 90vw;
  }
+ 
+.my-input, .my-textarea{
+    border: 1px solid black;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
 
 
 
