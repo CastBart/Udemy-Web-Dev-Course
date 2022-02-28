@@ -1,20 +1,20 @@
-let myBtn = document.getElementById("go-button");
-const myArr = [];
-
-function buttonClicked(){
-    console.log("Button Clicked");
-    let text = document.getElementsByClassName("my-input")[0].value;
-    let result = document.getElementById("text");
-    let textArea = document.getElementsByClassName("my-textarea")[0].value;
-
-    console.log(text);
-    result.innerHTML = "Hello, "+ text + "<br />";
-    result.innerHTML += "Message: " + textArea;
-
+function missionNumber(array){
 
     
+    let myArr = [...array];
+    myArr.sort((a,b) => a-b);
+    console.log(myArr);
+    for(let i = myArr[0]; i < myArr.length; i++){
+        if(i !== myArr[i]){
+            return i;
+        }
+    }
+    return "No missing numbers";
 }
 
 
 
-myBtn.addEventListener("click", buttonClicked);
+let numbers = [3,8,7,9,6,0,1,12,5,14,4,2,19,16,18,11,10,15,13,17,20];
+
+
+console.log(missionNumber(numbers));
