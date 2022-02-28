@@ -6,41 +6,61 @@ body {
     font-weight: 300 !important;
     margin: 0px;
     text-shadow: 2px 2px 1px rgba(214, 159, 159, 0.411);
-    margin-top: 100px;
 }
 
 body h1 {
     font-weight: 300;
     margin: 20px 30px;
-    z-index: 4;
-    position: absolute;
 }
 #site-title {
     font-family: "Redressed", sans-serif;
+    display: inline-block;
 }
 
 #main-header {
     border-bottom: 5px solid rgba(0, 0, 0, 0.308);
-    border-radius: 5px;
-    position: absolute;
-    width: 100%;
-    background:rgba(255, 255, 255, .9);
-    top: 0px;
-    height: 80px;
+  
 }
  #top-stories{
      margin: 0 30px;
      max-width: 90vw;
  }
  
-.my-input, .my-textarea{
-    border: 1px solid black;
-    width: 100%;
-    box-sizing: border-box;
-    border-radius: 10px;
+ .profile-menu{
+     list-style: none;
+     float: right;
+     margin-top: 30px;
+     margin-right: 20px;
+     padding-bottom: 36px;
+ }
+
+ .submenu{
+     list-style: none;
+     padding: 0px;
+     border: 1px solid #aaa;
+     background: white;
+     margin-top: 32px;
+     box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.3);
+     width: 300px;
+     position: absolute;
+     right: 10px;
+     display: none;
+ }
+ .submenu.active{
+     display: block;
+ }
+ .submenu a{
+    text-decoration: none;
+    color: #8d4d4d;
     padding: 10px;
-    margin-bottom: 20px;
-}
+    text-shadow: none;
+    font-weight: 600;
+    display: block;
+ }
+
+ .submenu a:hover{
+    background: #0008ff24;
+ }
 
 
 

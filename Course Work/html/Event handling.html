@@ -11,15 +11,18 @@
         
         <header id="main-header">
             <h1 id="site-title">Event Handling</h1>
+            <ul class="profile-menu">
+                <li><a class="profile-menu-trigger" data-trigger="dropdown" href="#">Logged in as Bartek</a>
+                    <ul class="profile-submenu submenu">
+                        <li><a href="#">My Account</a></li>
+                        <li><a href="#">Settings</a></li>
+                        <li><a href="#">Log out</a></li>
+                    </ul>
+                </li>
+            </ul>
         </header>
        
-        <section id="top-stories">
-            <input class="my-input" placeholder="Type in your name"/>
-            <textarea class="my-textarea" placeholder="Your message"></textarea>
-         
-            <button id="go-button"> Go</button>
-            <div id="text">Click that button</div>
-        </section>
+        
         
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script src="../js/main.js"></script>

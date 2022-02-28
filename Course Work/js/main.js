@@ -1,12 +1,15 @@
 $(document).ready(function(){
 
 
-    var el = document.getElementById("text");
+    $("[data-trigger='dropdown']").on("mouseenter", function(){
+        let submenu = $(this).parent().find(".submenu");
+        submenu.fadeIn(300);
 
-
-    $("#go-button").on("click",()=>{
-        alert("Fantastic job clicking that button!");
+        $(".profile-menu").on("mouseleave", ()=>{
+            submenu.fadeOut(300);
+        })
     });
+
 
 
     
