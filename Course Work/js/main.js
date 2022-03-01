@@ -12,5 +12,25 @@ $(document).ready(function(){
 
 
 
+
+    $("#append, #prepend, #replace").on("click", (event)=>{
+
+        let element = $(event.currentTarget);
+        let action = element.attr("id");
+        let content = $(".text").val();
+
+        if(action == "append"){
+            console.log("Appending",content);
+            $("#main").append(content);
+        }else if(action == "prepend"){
+            console.log("Prepending");
+            $("#main").prepend(content);
+        }else if(action == "replace"){
+            console.log("Replacing");
+            $("#main").html(content);
+        }
+
+        $(".text").val("");
+    });
     
 });
