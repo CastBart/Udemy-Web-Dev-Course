@@ -2,19 +2,25 @@ $(document).ready(function(){
 
     let el = document.getElementById("text");
 
+    $(document).on("contextmenu", function () {
+        return false;
+    });
+
+
     $(document).on("mousedown", function (event) {
-        event.preventDefault();
-        switch(event.which){
-            case 1:
-                console.log("Clicked left mouse button");
-                break;
-            case 2:
-                console.log("Clicked the scroll wheel");
-                break;
-            case 3:
-                console.log("Clicked right mouse button");
-                break;
+        event.stopPropagation();
+        
+        if(event.which == 3){
+            $("#context").css({
+                top: event.pageY,
+                left: event.pageX
+            });
+
+            $("#context").fadeIn();
+            return false;
         }
+        $("#context").fadeOut();
+
     });
 
 
