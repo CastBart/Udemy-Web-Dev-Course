@@ -10,7 +10,18 @@ $(document).ready(function(){
     $(document).on("mousedown", function (event) {
         event.stopPropagation();
         
+       
+
         if(event.which == 3){
+
+            $(".hidden").removeClass("shown");
+
+            if($(event.target).is("img")){
+                $(".saveimg, .newtab").addClass("shown");
+            }else if($(event.target).is("a")){
+                $(".newtab").addClass("shown");
+            }
+
             $("#context").css({
                 top: event.pageY,
                 left: event.pageX
